@@ -7,7 +7,7 @@ php:
   - "7.2"
 
 script:
-  - mkdir -p build/logs
+  - sudo mkdir -p build/logs
 
 after_script:
   - mv build/logs/coverage.xml build/logs/coverage.xml.bak
