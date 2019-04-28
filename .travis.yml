@@ -6,9 +6,6 @@ php:
   - "7.1"
   - "7.2"
 
-script:
-  - sudo mkdir -p build/logs
-
 after_script:
   - mv build/logs/coverage.xml build/logs/coverage.xml.bak
   - sed 's#/code/##g' build/logs/coverage.xml.bak > build/logs/coverage.xml
