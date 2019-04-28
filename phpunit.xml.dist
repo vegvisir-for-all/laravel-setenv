@@ -12,7 +12,7 @@
          verbose="true"
 >
     <logging>
-        <log type="coverage-clover" target="build/logs/coverage.xml"/>
+        <log type="coverage-clover" target="coverage.xml"/>
     </logging>
     <testsuites>
         <testsuite name="SetEnv Test Suite">
