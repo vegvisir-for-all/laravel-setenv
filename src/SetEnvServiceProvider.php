@@ -28,6 +28,5 @@ class SetEnvServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        die();
     }
 }
