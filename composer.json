@@ -1,0 +1,47 @@
+{
+    "name": "vegvisir/laravel-setenv",
+    "description": "Simple package for setting .env values in Laravel programatically",
+    "keywords": [
+        "laravel", "env"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Vegvisir\\SetEnv\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Vegvisir\\SetEnv\\Tests\\": "tests/"
+        }
+    },
+    "type": "library",
+    "require": {
+        "php": ">=7.0",
+        "laravel/framework": "^5.5"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.5",
+        "phpunit/phpcov": "^4.0|^5.0",
+        "php-coveralls/php-coveralls": "^2.1",
+        "vlucas/phpdotenv": "^3.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marek Kapusta-Ognicki",
+            "email": "vegvisir@sigrun.eu"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel":{
+            "providers": [
+                "Vegvisir\\SetEnv\\SetEnvServiceProvider"
+            ],
+            "aliases": {
+                "TrustNoSql": "Vegvisir\\SetEnv\\SetEnvFacade"
+            }
+        }
+    }
+}
